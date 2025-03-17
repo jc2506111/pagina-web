@@ -93,56 +93,31 @@
         </header>
     
         <div class="menu">
-            <button onclick="showSection('home')">Inicio</button>
             <button onclick="showSection('shop')">Tienda</button>
         </div>
     
-        <section id="home">
-            <h2>Bienvenido a WebInnovate</h2>
-            <p>Descubre nuestra increíble selección de productos.</p>
-        </section>
-    
-        <section id="shop" class="hidden">
+        <section id="shop">
+            <h2>Juegos de Acción</h2>
             <div class="products">
-                <div class="product" data-id="1" data-name="Juego de Acción 1" data-price="30">
-                    <img src="https://via.placeholder.com/150" alt="Juego de Acción 1">
-                    <h2>Juego de Acción 1</h2>
-                    <p>$30.00</p>
-                    <button class="button add-to-cart">Agregar al carrito</button>
-                </div>
-                <div class="product" data-id="2" data-name="Juego de Estrategia 1" data-price="25">
-                    <img src="https://via.placeholder.com/150" alt="Juego de Estrategia 1">
-                    <h2>Juego de Estrategia 1</h2>
-                    <p>$25.00</p>
-                    <button class="button add-to-cart">Agregar al carrito</button>
-                </div>
-                <div class="product" data-id="3" data-name="Juego de Misterio 1" data-price="20">
-                    <img src="https://via.placeholder.com/150" alt="Juego de Misterio 1">
-                    <h2>Juego de Misterio 1</h2>
-                    <p>$20.00</p>
-                    <button class="button add-to-cart">Agregar al carrito</button>
-                </div>
-                <div class="product" data-id="4" data-name="Juego de Acción 2" data-price="35">
-                    <img src="https://via.placeholder.com/150" alt="Juego de Acción 2">
-                    <h2>Juego de Acción 2</h2>
-                    <p>$35.00</p>
-                    <button class="button add-to-cart">Agregar al carrito</button>
-                </div>
-                <div class="product" data-id="5" data-name="Juego de Estrategia 2" data-price="28">
-                    <img src="https://via.placeholder.com/150" alt="Juego de Estrategia 2">
-                    <h2>Juego de Estrategia 2</h2>
-                    <p>$28.00</p>
-                    <button class="button add-to-cart">Agregar al carrito</button>
-                </div>
+                <div class="product"><img src="https://via.placeholder.com/150" alt="GTA V"><h2>GTA V</h2><p>$30.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
+                <div class="product"><img src="https://via.placeholder.com/150" alt="Call of Duty"><h2>Call of Duty</h2><p>$50.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
+            </div>
+            <h2>Juegos de Estrategia</h2>
+            <div class="products">
+                <div class="product"><img src="https://via.placeholder.com/150" alt="Age of Empires IV"><h2>Age of Empires IV</h2><p>$40.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
+                <div class="product"><img src="https://via.placeholder.com/150" alt="Civilization VI"><h2>Civilization VI</h2><p>$35.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
+            </div>
+            <h2>Juegos de Misterio</h2>
+            <div class="products">
+                <div class="product"><img src="https://via.placeholder.com/150" alt="The Vanishing of Ethan Carter"><h2>The Vanishing of Ethan Carter</h2><p>$25.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
+                <div class="product"><img src="https://via.placeholder.com/150" alt="Alan Wake"><h2>Alan Wake</h2><p>$30.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
             </div>
         </section>
     </div>
     
     <script>
         function showSection(section) {
-            document.getElementById('home').classList.add('hidden');
-            document.getElementById('shop').classList.add('hidden');
-            document.getElementById(section).classList.remove('hidden');
+            document.getElementById('shop').classList.remove('hidden');
         }
 
         function enterSite() {
@@ -152,4 +127,3 @@
     </script>
 </body>
 </html>
-
