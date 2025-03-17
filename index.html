@@ -41,51 +41,85 @@
         .hidden {
             display: none;
         }
+        .welcome-screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .enter-button {
+            background: #00c853;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .enter-button:hover {
+            background: #009624;
+            transform: scale(1.1);
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>WebInnovate 🛒</h1>
-    </header>
-    
-    <div class="menu">
-        <button onclick="showSection('home')">Inicio</button>
-        <button onclick="showSection('shop')">Tienda</button>
+    <div class="welcome-screen" id="welcome">
+        <h1>Bienvenido a WebInnovate</h1>
+        <p>Explora nuestra tienda con productos increíbles.</p>
+        <button class="enter-button" onclick="enterSite()">Entrar</button>
     </div>
     
-    <section id="home">
-        <h2>Bienvenido a WebInnovate</h2>
-        <p>Descubre nuestra increíble selección de productos.</p>
-    </section>
+    <div id="main-content" class="hidden">
+        <header>
+            <h1>WebInnovate 🛒</h1>
+        </header>
     
-    <section id="shop" class="hidden">
-        <div class="products">
-            <div class="product" data-id="1" data-name="Producto 1" data-price="10">
-                <img src="https://via.placeholder.com/150" alt="Producto 1">
-                <h2>Producto 1</h2>
-                <p>$10.00</p>
-                <button class="button add-to-cart">Agregar al carrito</button>
-            </div>
-            <div class="product" data-id="2" data-name="Producto 2" data-price="15">
-                <img src="https://via.placeholder.com/150" alt="Producto 2">
-                <h2>Producto 2</h2>
-                <p>$15.00</p>
-                <button class="button add-to-cart">Agregar al carrito</button>
-            </div>
-            <div class="product" data-id="3" data-name="Producto 3" data-price="20">
-                <img src="https://via.placeholder.com/150" alt="Producto 3">
-                <h2>Producto 3</h2>
-                <p>$20.00</p>
-                <button class="button add-to-cart">Agregar al carrito</button>
-            </div>
+        <div class="menu">
+            <button onclick="showSection('home')">Inicio</button>
+            <button onclick="showSection('shop')">Tienda</button>
         </div>
-    </section>
+    
+        <section id="home">
+            <h2>Bienvenido a WebInnovate</h2>
+            <p>Descubre nuestra increíble selección de productos.</p>
+        </section>
+    
+        <section id="shop" class="hidden">
+            <div class="products">
+                <div class="product" data-id="1" data-name="Producto 1" data-price="10">
+                    <img src="https://via.placeholder.com/150" alt="Producto 1">
+                    <h2>Producto 1</h2>
+                    <p>$10.00</p>
+                    <button class="button add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="product" data-id="2" data-name="Producto 2" data-price="15">
+                    <img src="https://via.placeholder.com/150" alt="Producto 2">
+                    <h2>Producto 2</h2>
+                    <p>$15.00</p>
+                    <button class="button add-to-cart">Agregar al carrito</button>
+                </div>
+                <div class="product" data-id="3" data-name="Producto 3" data-price="20">
+                    <img src="https://via.placeholder.com/150" alt="Producto 3">
+                    <h2>Producto 3</h2>
+                    <p>$20.00</p>
+                    <button class="button add-to-cart">Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+    </div>
     
     <script>
         function showSection(section) {
             document.getElementById('home').classList.add('hidden');
             document.getElementById('shop').classList.add('hidden');
             document.getElementById(section).classList.remove('hidden');
+        }
+
+        function enterSite() {
+            document.getElementById('welcome').classList.add('hidden');
+            document.getElementById('main-content').classList.remove('hidden');
         }
     </script>
 </body>
