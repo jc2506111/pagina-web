@@ -78,6 +78,13 @@
             width: 100%;
             border-radius: 10px;
         }
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+        }
     </style>
 </head>
 <body>
@@ -90,13 +97,14 @@
     <div id="main-content" class="hidden">
         <header>
             <h1>WebInnovate 🛒</h1>
+            <nav class="menu">
+                <button onclick="showSection('shop')">Tienda</button>
+                <button onclick="showSection('about')">Sobre Nosotros</button>
+                <button onclick="showSection('contact')">Contacto</button>
+            </nav>
         </header>
     
-        <div class="menu">
-            <button onclick="showSection('shop')">Tienda</button>
-        </div>
-    
-        <section id="shop">
+        <section id="shop" class="hidden">
             <h2>Juegos de Acción</h2>
             <div class="products">
                 <div class="product"><img src="https://via.placeholder.com/150" alt="GTA V"><h2>GTA V</h2><p>$30.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
@@ -114,10 +122,15 @@
             </div>
         </section>
     </div>
+
+    <footer>
+        <p>&copy; 2025 WebInnovate. Todos los derechos reservados.</p>
+    </footer>
     
     <script>
         function showSection(section) {
-            document.getElementById('shop').classList.remove('hidden');
+            document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
+            document.getElementById(section).classList.remove('hidden');
         }
 
         function enterSite() {
