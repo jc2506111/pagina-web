@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "WebInnovate";
+}
+
+<style>
+    /* Estilos generales */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: white;
+        background-color: #1a1a1a;
+        background-image: url('https://example.com/tu-imagen.gif'); /* Reemplaza con la URL de tu imagen */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    /* Contenedor principal */
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 70vh;
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius: 10px;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 24px;
+        background-color: #00aaff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s, transform 0.2s;
+    }
+
+        .button:hover {
+            background-color: #0088cc;
+            transform: scale(1.05);
+        }
+</style>
+
+<div class="container">
+    @if (ViewData["Title"] == "WebInnovate")
+    {
+        <button class="button" onclick="window.location.href='/Home/Login'">Vamos</button>
+    }
+</div>
