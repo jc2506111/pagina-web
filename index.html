@@ -6,23 +6,36 @@
     <title>Tienda Online</title>
     <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
         .product {
             position: relative;
             display: inline-block;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-            background: white;
-            transition: transform 0.2s;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.1);
+            transition: transform 0.2s, background 0.3s;
         }
         .product:hover {
             transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
         }
         .product .product-info {
             display: none;
             position: absolute;
-            background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            background: rgba(0, 0, 0, 0.8);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
             padding: 10px;
             border-radius: 10px;
             list-style: none;
@@ -32,11 +45,18 @@
             width: max-content;
             white-space: nowrap;
             opacity: 0;
+            color: white;
             transition: opacity 0.3s ease-in-out;
         }
         .product:hover .product-info {
             display: block;
             opacity: 1;
+        }
+        .cart-container {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
         }
     </style>
 </head>
