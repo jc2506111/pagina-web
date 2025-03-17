@@ -5,6 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        .product {
+            position: relative;
+            display: inline-block;
+        }
+        .product .product-info {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            list-style: none;
+        }
+        .product:hover .product-info {
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -20,18 +38,33 @@
             <h2>Producto 1</h2>
             <p>$10.00</p>
             <button class="add-to-cart">Agregar al carrito</button>
+            <ul class="product-info">
+                <li>Detalles del producto 1</li>
+                <li>Material: Algodón</li>
+                <li>Color: Azul</li>
+            </ul>
         </div>
         <div class="product" data-id="2" data-name="Producto 2" data-price="15">
             <img src="https://via.placeholder.com/150" alt="Producto 2">
             <h2>Producto 2</h2>
             <p>$15.00</p>
             <button class="add-to-cart">Agregar al carrito</button>
+            <ul class="product-info">
+                <li>Detalles del producto 2</li>
+                <li>Material: Cuero</li>
+                <li>Color: Negro</li>
+            </ul>
         </div>
         <div class="product" data-id="3" data-name="Producto 3" data-price="20">
             <img src="https://via.placeholder.com/150" alt="Producto 3">
             <h2>Producto 3</h2>
             <p>$20.00</p>
             <button class="add-to-cart">Agregar al carrito</button>
+            <ul class="product-info">
+                <li>Detalles del producto 3</li>
+                <li>Material: Plástico</li>
+                <li>Color: Rojo</li>
+            </ul>
         </div>
     </section>
     
@@ -44,4 +77,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
