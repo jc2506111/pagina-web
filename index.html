@@ -9,18 +9,34 @@
         .product {
             position: relative;
             display: inline-block;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            background: white;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
         }
         .product .product-info {
             display: none;
             position: absolute;
-            background-color: white;
+            background: rgba(255, 255, 255, 0.95);
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             padding: 10px;
-            border-radius: 5px;
+            border-radius: 10px;
             list-style: none;
+            left: 50%;
+            top: 100%;
+            transform: translateX(-50%);
+            width: max-content;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
         }
         .product:hover .product-info {
             display: block;
+            opacity: 1;
         }
     </style>
 </head>
