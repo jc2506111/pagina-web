@@ -45,27 +45,6 @@
             background: #e68900;
             transform: scale(1.1);
         }
-        .welcome-screen {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .enter-button {
-            background: #00c853;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2rem;
-            cursor: pointer;
-            transition: background 0.3s, transform 0.2s;
-        }
-        .enter-button:hover {
-            background: #009624;
-            transform: scale(1.1);
-        }
         .container {
             padding-top: 80px;
         }
@@ -80,10 +59,16 @@
     </style>
 </head>
 <body>
-    <div class="welcome-screen" id="welcome">
+    <header>
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="tienda.html">Juegos</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <div class="container">
         <h1>Bienvenido a WebInnovate</h1>
         <p>Explora nuestra tienda con productos increíbles.</p>
-        <button class="enter-button" onclick="location.href='tienda.html'">Entrar</button>
     </div>
 </body>
 </html>
