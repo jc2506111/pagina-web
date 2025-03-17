@@ -38,9 +38,6 @@
             background: #e68900;
             transform: scale(1.1);
         }
-        .hidden {
-            display: none;
-        }
         .welcome-screen {
             display: flex;
             flex-direction: column;
@@ -98,9 +95,9 @@
         <header>
             <h1>WebInnovate 🛒</h1>
             <nav class="menu">
-                <button onclick="showSection('shop')">Tienda</button>
-                <button onclick="showSection('about')">Sobre Nosotros</button>
-                <button onclick="showSection('contact')">Contacto</button>
+                <button onclick="navigateTo('shop')">Tienda</button>
+                <button onclick="navigateTo('about')">Sobre Nosotros</button>
+                <button onclick="navigateTo('contact')">Contacto</button>
             </nav>
         </header>
     
@@ -110,16 +107,6 @@
                 <div class="product"><img src="https://via.placeholder.com/150" alt="GTA V"><h2>GTA V</h2><p>$30.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
                 <div class="product"><img src="https://via.placeholder.com/150" alt="Call of Duty"><h2>Call of Duty</h2><p>$50.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
             </div>
-            <h2>Juegos de Estrategia</h2>
-            <div class="products">
-                <div class="product"><img src="https://via.placeholder.com/150" alt="Age of Empires IV"><h2>Age of Empires IV</h2><p>$40.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
-                <div class="product"><img src="https://via.placeholder.com/150" alt="Civilization VI"><h2>Civilization VI</h2><p>$35.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
-            </div>
-            <h2>Juegos de Misterio</h2>
-            <div class="products">
-                <div class="product"><img src="https://via.placeholder.com/150" alt="The Vanishing of Ethan Carter"><h2>The Vanishing of Ethan Carter</h2><p>$25.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
-                <div class="product"><img src="https://via.placeholder.com/150" alt="Alan Wake"><h2>Alan Wake</h2><p>$30.00</p><button class="button add-to-cart">Agregar al carrito</button></div>
-            </div>
         </section>
     </div>
 
@@ -128,12 +115,14 @@
     </footer>
     
     <script>
-        function showSection(section) {
+        function navigateTo(section) {
+            window.location.hash = section;
             document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
             document.getElementById(section).classList.remove('hidden');
         }
 
         function enterSite() {
+            window.location.hash = 'shop';
             document.getElementById('welcome').classList.add('hidden');
             document.getElementById('main-content').classList.remove('hidden');
         }
