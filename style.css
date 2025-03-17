@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+/* Encabezado */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Sección principal */
+.contenido {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: #0056b3;
+}
+
+/* Pie de página */
+footer {
+    margin-top: 50px;
+    background: #333;
+    color: white;
+    padding: 10px;
+}
