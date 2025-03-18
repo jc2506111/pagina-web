@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebInnovate</title>
+    <title>Tienda - WebInnovate</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -12,51 +12,31 @@
             color: white;
             margin: 0;
             padding: 0;
-        }
-        header {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .menu-left {
-            display: flex;
-            gap: 15px;
-            margin-left: 20px;
-        }
-        .menu-right {
-            display: flex;
-            gap: 15px;
-            margin-right: 20px;
-        }
-        .menu a {
-            background: #ff9800;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background 0.3s, transform 0.2s;
-            display: inline-block;
-        }
-        .menu a:hover {
-            background: #e68900;
-            transform: scale(1.1);
+            text-align: center;
         }
         .container {
-            padding-top: 120px;
-            text-align: center;
+            padding-top: 100px;
+            max-width: 1200px;
+            margin: auto;
         }
-        footer {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 10px;
+        h2 {
             margin-top: 20px;
-            text-align: center;
+            color: #ff9800;
+        }
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .game-item {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .game-item:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
@@ -73,11 +53,35 @@
         </nav>
     </header>
     <div class="container">
-        <h1>Bienvenido a WebInnovate</h1>
-        <p>Explora nuestra tienda con productos increíbles.</p>
+        <h1>Tienda de Juegos</h1>
+        <h2>Acción</h2>
+        <div class="game-list">
+            <div class="game-item">Grand Theft Auto V</div>
+            <div class="game-item">Call of Duty: Modern Warfare</div>
+            <div class="game-item">DOOM Eternal</div>
+            <div class="game-item">Cyberpunk 2077</div>
+            <div class="game-item">Battlefield 2042</div>
+        </div>
+        <h2>Estrategia</h2>
+        <div class="game-list">
+            <div class="game-item">Age of Empires IV</div>
+            <div class="game-item">Civilization VI</div>
+            <div class="game-item">Starcraft II</div>
+            <div class="game-item">Total War: Warhammer III</div>
+            <div class="game-item">Anno 1800</div>
+        </div>
+        <h2>Misterio</h2>
+        <div class="game-list">
+            <div class="game-item">The Vanishing of Ethan Carter</div>
+            <div class="game-item">L.A. Noire</div>
+            <div class="game-item">Heavy Rain</div>
+            <div class="game-item">Alan Wake</div>
+            <div class="game-item">Observer</div>
+        </div>
     </div>
     <footer>
         <p>&copy; 2025 WebInnovate. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
+
