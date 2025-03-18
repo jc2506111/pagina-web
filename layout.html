@@ -13,27 +13,24 @@
         }
 
         header {
+            display: flex;
+            justify-content: space-between;
             background-color: #333;
             color: white;
             padding: 20px;
-            text-align: center;
         }
 
         header h1 {
             margin: 0;
         }
 
-        nav {
-            margin-top: 15px;
-        }
-
-        nav a {
+        header nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
         }
 
-        nav a:hover {
+        header nav a:hover {
             text-decoration: underline;
         }
 
@@ -60,33 +57,21 @@
 <body>
 
     <header>
-        <h1>Bienvenidos a mi Proyecto</h1>
+        <h1>Mi Proyecto</h1>
         <nav>
-            <a href="#descripcion">Descripción</a>
-            <a href="#contacto">Contacto</a>
-            <a href="#contribuir">Contribuir</a>
+            <a href="#inicio">Inicio</a>
+            <a href="#juegos">Juegos</a>
         </nav>
     </header>
 
-    <section id="descripcion">
-        <h2>Descripción</h2>
-        <p>Este proyecto es un ejemplo de cómo estructurar una página web sencilla utilizando HTML y CSS. Aquí podrás encontrar información sobre el proyecto, cómo contribuir y otros detalles importantes.</p>
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Bienvenidos a mi proyecto. Aquí encontrarás detalles sobre el trabajo que estoy realizando, cómo puedes contribuir y mucho más.</p>
     </section>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo.</p>
-        <p>Email: ejemplo@correo.com</p>
-    </section>
-
-    <section id="contribuir">
-        <h2>Contribuir</h2>
-        <p>Para contribuir a este proyecto, por favor sigue estos pasos:</p>
-        <ol>
-            <li>Haz un fork del repositorio.</li>
-            <li>Crea una rama para tu funcionalidad.</li>
-            <li>Haz tus cambios y envía un pull request.</li>
-        </ol>
+    <section id="juegos">
+        <h2>Juegos</h2>
+        <p>En esta sección encontrarás información sobre los juegos que estoy desarrollando. ¡Pronto más detalles!</p>
     </section>
 
     <footer>
