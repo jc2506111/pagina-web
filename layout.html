@@ -3,76 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebInnovate</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Mi Proyecto</title>
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #141e30, #243b55);
-            color: white;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
         }
+
         header {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 15px 20px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .menu {
-            display: flex;
-            gap: 20px;
-        }
-        .menu a {
-            background: #ff9800;
+            background-color: #333;
             color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
             text-decoration: none;
-            transition: background 0.3s, transform 0.2s;
+            margin: 0 15px;
         }
-        .menu a:hover {
-            background: #e68900;
-            transform: scale(1.1);
+
+        nav a:hover {
+            text-decoration: underline;
         }
-        .container {
-            padding-top: 100px;
-            text-align: center;
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
+
         footer {
-            background: rgba(0, 0, 0, 0.9);
-            padding: 10px;
-            margin-top: 20px;
             text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
+
     <header>
-        <nav class="menu">
-            <div>
-                <a href="index.html">Inicio</a>
-                <a href="juegos.html">Juegos</a>
-                <a href="contacto.html">Contacto</a>
-            </div>
-            <div>
-                <a href="login.html">Iniciar Sesión</a>
-                <a href="registro.html">Registrarse</a>
-            </div>
+        <h1>Bienvenidos a mi Proyecto</h1>
+        <nav>
+            <a href="#descripcion">Descripción</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#contribuir">Contribuir</a>
         </nav>
     </header>
-    <div class="container">
-        <h1>Bienvenido a WebInnovate</h1>
-        <p>Explora nuestra tienda con los mejores videojuegos.</p>
-    </div>
+
+    <section id="descripcion">
+        <h2>Descripción</h2>
+        <p>Este proyecto es un ejemplo de cómo estructurar una página web sencilla utilizando HTML y CSS. Aquí podrás encontrar información sobre el proyecto, cómo contribuir y otros detalles importantes.</p>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo.</p>
+        <p>Email: ejemplo@correo.com</p>
+    </section>
+
+    <section id="contribuir">
+        <h2>Contribuir</h2>
+        <p>Para contribuir a este proyecto, por favor sigue estos pasos:</p>
+        <ol>
+            <li>Haz un fork del repositorio.</li>
+            <li>Crea una rama para tu funcionalidad.</li>
+            <li>Haz tus cambios y envía un pull request.</li>
+        </ol>
+    </section>
+
     <footer>
-        <p>&copy; 2025 WebInnovate. Todos los derechos reservados.</p>
+        <p>Proyecto creado por JC | 2025</p>
     </footer>
+
 </body>
 </html>
