@@ -1,76 +1,110 @@
-/* Estilos generales */
-body {
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
-    text-align: center;
-    background-color: #f4f7fc;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
     color: #333;
 }
 
-/* Encabezado */
 header {
-    background: #0056b3;
-    padding: 20px 5%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #333;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.content {
+    width: 70%;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.product-card p {
+    color: #777;
+    font-size: 14px;
+}
+
+.buy-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-btn:hover {
+    background-color: #45a049;
+}
+
+aside {
+    width: 25%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
     position: fixed;
     width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-.menu a {
-    text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-.menu a:hover {
-    color: #ffcc00;
-}
-
-/* Hero Section */
-.hero {
-    background: linear-gradient(to right, #3b82f6, #06b6d4);
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-    margin-top: 80px;
-}
-
-/* Secciones */
-.section {
-    padding: 50px 5%;
-    text-align: center;
-}
-.section:nth-child(even) {
-    background: #e0f2fe;
-}
-
-/* Botón CTA */
-.cta {
-    background: #3b82f6;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-    display: inline-block;
-    margin-top: 20px;
-}
-.cta:hover {
-    background: #004494;
-}
-
-/* Pie de página */
-footer {
-    background: #0f172a;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    bottom: 0;
 }
