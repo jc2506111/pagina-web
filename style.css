@@ -8,19 +8,24 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
-    background-color: #4CAF50;
+    background: linear-gradient(to right, #4CAF50, #388E3C);
     color: white;
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header .logo h1 {
     margin-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -37,10 +42,15 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    transition: background 0.3s ease;
+    border-radius: 5px;
 }
 
 nav ul li a:hover {
-    color: #f7f7f7;
+    background-color: #66BB6A;
+    color: white;
 }
 
 .container {
@@ -54,17 +64,19 @@ main {
 }
 
 .hero {
-    background-color: #FF5722;
+    background: linear-gradient(to top, #FF5722, #FF7043);
     color: white;
     padding: 40px;
     text-align: center;
-    border-radius: 8px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     margin-bottom: 30px;
 }
 
 .hero h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hero p {
@@ -76,9 +88,11 @@ main {
     background-color: #4CAF50;
     color: white;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     font-size: 1.2rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .cta-btn:hover {
@@ -94,27 +108,35 @@ main {
 .product-card {
     background-color: white;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     width: 30%;
     text-align: center;
     padding: 20px;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
 }
 
 .product-card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
 }
 
 .product-card h3 {
     font-size: 1.5rem;
     color: #333;
+    margin-top: 15px;
 }
 
 .product-card p {
@@ -131,6 +153,7 @@ main {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .buy-btn:hover {
@@ -142,12 +165,27 @@ aside {
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     margin-top: 20px;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p a {
+    color: #66BB6A;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }
