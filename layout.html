@@ -3,80 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            background-color: #333;
-            color: white;
-            padding: 20px;
-        }
-
-        header h1 {
-            margin: 0;
-        }
-
-        header nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-
-        header nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: white;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <title>Layout Básico</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
     <header>
-        <h1>Mi Proyecto</h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#juegos">Juegos</a>
-        </nav>
+        <h1>Mi Layout Básico</h1>
     </header>
-
-    <section id="inicio">
-        <h2>Inicio</h2>
-        <p>Bienvenidos a mi proyecto. Aquí encontrarás detalles sobre el trabajo que estoy realizando, cómo puedes contribuir y mucho más.</p>
-    </section>
-
-    <section id="juegos">
-        <h2>Juegos</h2>
-        <p>En esta sección encontrarás información sobre los juegos que estoy desarrollando. ¡Pronto más detalles!</p>
-    </section>
-
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="content">
+            <h2>Contenido Principal</h2>
+            <p>Este es el contenido principal de la página.</p>
+        </section>
+        <aside>
+            <h3>Noticias</h3>
+            <p>Últimas noticias relacionadas con el tema.</p>
+        </aside>
+    </main>
     <footer>
-        <p>Proyecto creado por JC | 2025</p>
+        <p>&copy; 2025 Mi Página Web</p>
     </footer>
-
 </body>
 </html>
