@@ -11,8 +11,9 @@ body {
     line-height: 1.6;
 }
 
+/* Menú Superior */
 header {
-    background: linear-gradient(to right, #4CAF50, #388E3C);
+    background-color: #FF9800; /* Color cálido */
     color: white;
     padding: 20px 0;
     display: flex;
@@ -49,10 +50,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #66BB6A;
+    background-color: #ff5722;
     color: white;
 }
 
+/* Contenido Principal */
 .container {
     display: flex;
     justify-content: space-between;
@@ -168,6 +170,7 @@ aside {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Barra Inferior */
 footer {
     background-color: #333;
     color: white;
@@ -175,6 +178,7 @@ footer {
     padding: 15px;
     margin-top: 20px;
     font-size: 1rem;
+    position: relative;
 }
 
 footer p {
@@ -182,10 +186,11 @@ footer p {
 }
 
 footer p a {
-    color: #66BB6A;
+    color: #FF9800;
     text-decoration: none;
 }
 
 footer p a:hover {
     text-decoration: underline;
 }
+
